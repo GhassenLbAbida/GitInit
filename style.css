@@ -17,7 +17,7 @@ body {
 
 /* Styles spécifiques à la page de traduction */
 main {
-  max-width: 800px;
+  max-width: 801px;
   margin: 20px auto;
   background-color: #f8f8f8;
   padding: 20px;
@@ -29,7 +29,7 @@ main {
 .recording-widget,
 .translation-result-widget {
   border: 1px solid #e0e0e0;
-  padding: 20px;
+  padding: 22px;
   margin-bottom: 20px;
   background-color: #fefefe;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
