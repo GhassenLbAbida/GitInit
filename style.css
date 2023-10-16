@@ -1,0 +1,125 @@
+/* Reset default margin and padding to 0 for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set box-sizing to border-box for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Styles spécifiques à la page de traduction */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.language-target,
+.recording-widget,
+.translation-result-widget {
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fefefe;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recording-widget .widget-header,
+.translation-result-widget .widget-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.recording-widget button,
+.translation-result-widget button {
+  background-color: #e6c4c4;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.recording-widget button:disabled,
+.translation-result-widget button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.timer-display {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.audio-player {
+  margin-top: 10px;
+}
+
+.audio-player audio {
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.translation-output {
+  font-size: 16px;
+  margin-bottom: 0;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Styles pour centrer les widgets et les éloigner du header */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.language-target,
+.recording-widget,
+.translation-result-widget {
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+/* Éloigne les widgets du footer */
+footer {
+  margin-top: 5%;
+  font-weight: bold;
+  color: #333;
+  background-color: #f2f2f2;
+  padding: 30px;
+  font-size: 20px; /* Taille de police plus grande pour le footer */
+}

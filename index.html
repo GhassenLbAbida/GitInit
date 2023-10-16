@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LingoLink - Page de traduction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar">
+    <!-- Supprimez les liens de navigation que vous ne souhaitez pas afficher -->
+    <!-- <a href="#">Accueil</a>
+    <a href="#">À propos</a>
+    <a href="#">Contact</a> -->
+  </div>
+  <header>
+    <div class="header-content">
+      <h1>Lingolink - Traducteur</h1>
+    </div>
+  </header>
+  <main>
+    <div class="language-target">
+      <label for="target-language">Langue cible :</label>
+      <select id="target-language">
+        <option value="fr">Français</option>
+        <option value="en">Anglais</option>
+        <option value="es">Espagnol</option>
+        <!-- Ajoutez d'autres options de langues selon vos besoins -->
+      </select>
+    </div>
+
+    <div class="recording-widget">
+      <div class="widget-header">Cliquez ci-dessous pour enregistrer</div>
+      <div class="timer-display" id="timerDisplay">00:00</div>
+      <div style="text-align: center;">
+        <button id="startRecording">Démarrer l'enregistrement</button>
+        <button id="stopRecording" disabled>Arrêter l'enregistrement</button>
+        <div id="audioContainer" class="audio-player"></div>
+      </div>
+    </div>
+
+    <div class="translation-result-widget">
+      <div class="widget-header">Résultat de la traduction</div>
+      <div class="translation-output" id="translation-result"></div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-content">
+        Communiquez efficacement avec une seule solution.
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
